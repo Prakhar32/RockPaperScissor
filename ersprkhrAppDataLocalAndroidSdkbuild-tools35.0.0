@@ -1,0 +1,572 @@
+warning: in the working copy of 'Assets/Scenes/GameScene.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/ProjectSettings.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'UserSettings/Layouts/default-2023.dwlt', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/.vs/RockPaperScissorsMore/v17/.suo b/.vs/RockPaperScissorsMore/v17/.suo[m
+[1mindex 7355b824..604d3ba7 100644[m
+Binary files a/.vs/RockPaperScissorsMore/v17/.suo and b/.vs/RockPaperScissorsMore/v17/.suo differ
+[1mdiff --git a/.vs/RockPaperScissorsMore/v17/DocumentLayout.backup.json b/.vs/RockPaperScissorsMore/v17/DocumentLayout.backup.json[m
+[1mindex 853bc035..2680b7d1 100644[m
+[1m--- a/.vs/RockPaperScissorsMore/v17/DocumentLayout.backup.json[m
+[1m+++ b/.vs/RockPaperScissorsMore/v17/DocumentLayout.backup.json[m
+[36m@@ -3,32 +3,44 @@[m
+   "WorkspaceRootPath": "D:\\Unity Projects\\RockPaperScissorsMore\\",[m
+   "Documents": [[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|d:\\unity projects\\rockpaperscissorsmore\\assets\\scripts\\gameplay\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|d:\\unity projects\\rockpaperscissorsmore\\assets\\scripts\\gameplay\\gameplayinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\gameplayinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|d:\\unity projects\\rockpaperscissorsmore\\assets\\scripts\\startmenu\\faceoffchartdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\startmenu\\faceoffchartdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\decisionmaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\decisionmaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\topscoredisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\topscoredisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\score\\currentscorekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\score\\currentscorekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\coordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\coordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+       "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+       "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{60D7BB25-538F-998E-B22E-C75562BAAF68}|PlayModeTests.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\playmodetests\\timertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{60D7BB25-538F-998E-B22E-C75562BAAF68}|PlayModeTests.csproj|solutionrelative:assets\\playmodetests\\timertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\startmenu\\startmenudisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\startmenu\\startmenudisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\decisionmaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\decisionmaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\ai\\aiappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\ai\\aiappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{60D7BB25-538F-998E-B22E-C75562BAAF68}|PlayModeTests.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\playmodetests\\timertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{60D7BB25-538F-998E-B22E-C75562BAAF68}|PlayModeTests.csproj|solutionrelative:assets\\playmodetests\\timertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\gameplayinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\gameplayinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+       "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[36m@@ -41,14 +53,6 @@[m
+     {[m
+       "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\ai\\aiopponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+       "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\ai\\aiopponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\startmenu\\startmenudisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\startmenu\\startmenudisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\gameplaydisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\gameplaydisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     }[m
+   ],[m
+   "DocumentGroupContainers": [[m
+[36m@@ -63,146 +67,162 @@[m
+             {[m
+               "$type": "Document",[m
+               "DocumentIndex": 0,[m
+[31m-              "Title": "Game.cs",[m
+[31m-              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Game.cs",[m
+[31m-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Game.cs",[m
+[31m-              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Game.cs",[m
+[31m-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Game.cs",[m
+[31m-              "ViewState": "AgIAABQAAAAAAAAAAAAAwDEAAAAAAAAAAAAAAA==",[m
+[32m+[m[32m              "Title": "GameplayInitializer.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[32m+[m[32m              "ViewState": "AgIAABwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T08:21:39.152Z",[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T15:25:35.778Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+[32m+[m[32m            },[m
+[32m+[m[32m            {[m
+[32m+[m[32m              "$type": "Document",[m
+[32m+[m[32m              "DocumentIndex": 1,[m
+[32m+[m[32m              "Title": "FaceOffChartDisplay.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\StartMenu\\FaceOffChartDisplay.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\Scripts\\StartMenu\\FaceOffChartDisplay.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\StartMenu\\FaceOffChartDisplay.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\Scripts\\StartMenu\\FaceOffChartDisplay.cs",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",[m
+[32m+[m[32m              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T10:36:08.122Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+[32m+[m[32m            },[m
+[32m+[m[32m            {[m
+[32m+[m[32m              "$type": "Document",[m
+[32m+[m[32m              "DocumentIndex": 2,[m
+[32m+[m[32m              "Title": "TopScoreDisplay.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\TopScoreDisplay.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\TopScoreDisplay.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\TopScoreDisplay.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\TopScoreDisplay.cs",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",[m
+[32m+[m[32m              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T10:14:19.557Z",[m
+               "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+               "DocumentIndex": 3,[m
+[31m-              "Title": "Timer.cs",[m
+[31m-              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Timer.cs",[m
+[31m-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Timer.cs",[m
+[31m-              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Timer.cs",[m
+[31m-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Timer.cs",[m
+[31m-              "ViewState": "AgIAABQAAAAAAAAAAAAQwDMAAAAdAAAAAAAAAA==",[m
+[32m+[m[32m              "Title": "CurrentScoreKeeper.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Score\\CurrentScoreKeeper.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Score\\CurrentScoreKeeper.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Score\\CurrentScoreKeeper.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Score\\CurrentScoreKeeper.cs",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T07:56:07.676Z",[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T09:43:24.307Z",[m
+               "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+               "DocumentIndex": 4,[m
+[31m-              "Title": "TimerTest.cs",[m
+[31m-              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\PlayModeTests\\TimerTest.cs",[m
+[31m-              "RelativeDocumentMoniker": "Assets\\PlayModeTests\\TimerTest.cs",[m
+[31m-              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\PlayModeTests\\TimerTest.cs",[m
+[31m-              "RelativeToolTip": "Assets\\PlayModeTests\\TimerTest.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",[m
+[32m+[m[32m              "Title": "Coordinator.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Coordinator.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Coordinator.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Coordinator.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Coordinator.cs",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T07:50:38.096Z",[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T08:21:39.152Z",[m
+               "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 11,[m
+[31m-              "Title": "GameplayDisplay.cs",[m
+[31m-              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\GameplayDisplay.cs",[m
+[31m-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\GameplayDisplay.cs",[m
+[31m-              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\GameplayDisplay.cs",[m
+[31m-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\GameplayDisplay.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",[m
+[32m+[m[32m              "DocumentIndex": 5,[m
+[32m+[m[32m              "Title": "Timer.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Timer.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Timer.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Timer.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Timer.cs",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T06:50:28.248Z"[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T07:56:07.676Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 10,[m
+[32m+[m[32m              "DocumentIndex": 6,[m
+               "Title": "StartMenuDisplay.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\StartMenu\\StartMenuDisplay.cs",[m
+               "RelativeDocumentMoniker": "Assets\\Scripts\\StartMenu\\StartMenuDisplay.cs",[m
+               "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\StartMenu\\StartMenuDisplay.cs",[m
+               "RelativeToolTip": "Assets\\Scripts\\StartMenu\\StartMenuDisplay.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T06:49:46.155Z"[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T06:49:46.155Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 2,[m
+[32m+[m[32m              "DocumentIndex": 7,[m
+               "Title": "DecisionMaker.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\DecisionMaker.cs",[m
+               "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\DecisionMaker.cs",[m
+               "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\DecisionMaker.cs",[m
+               "RelativeToolTip": "Assets\\Scripts\\Gameplay\\DecisionMaker.cs",[m
+[31m-              "ViewState": "AgIAAB4AAAAAAAAAAAA5wCsAAAAeAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+               "WhenOpened": "2024-09-01T06:44:03.226Z",[m
+               "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 5,[m
+[31m-              "Title": "AIAppearance.cs",[m
+[31m-              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\AI\\AIAppearance.cs",[m
+[31m-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\AI\\AIAppearance.cs",[m
+[31m-              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\AI\\AIAppearance.cs",[m
+[31m-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\AI\\AIAppearance.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAXAAAAAAAAAA==",[m
+[31m-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T06:29:51.389Z",[m
+[31m-              "EditorCaption": ""[m
+[31m-            },[m
+[31m-            {[m
+[31m-              "$type": "Document",[m
+[31m-              "DocumentIndex": 7,[m
+[32m+[m[32m              "DocumentIndex": 10,[m
+               "Title": "Move.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Move.cs",[m
+               "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Move.cs",[m
+               "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Move.cs",[m
+               "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Move.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAnAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+               "WhenOpened": "2024-09-01T06:18:06.061Z",[m
+               "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 1,[m
+[32m+[m[32m              "DocumentIndex": 8,[m
+[32m+[m[32m              "Title": "TimerTest.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\PlayModeTests\\TimerTest.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\PlayModeTests\\TimerTest.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\PlayModeTests\\TimerTest.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\PlayModeTests\\TimerTest.cs",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",[m
+[32m+[m[32m              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T07:50:38.096Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+[32m+[m[32m            },[m
+[32m+[m[32m            {[m
+[32m+[m[32m              "$type": "Document",[m
+[32m+[m[32m              "DocumentIndex": 9,[m
+               "Title": "Constants.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Constants.cs",[m
+               "RelativeDocumentMoniker": "Assets\\Scripts\\Constants.cs",[m
+               "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Constants.cs",[m
+               "RelativeToolTip": "Assets\\Scripts\\Constants.cs",[m
+[31m-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBYAAAAlAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBkAAAAAAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+               "WhenOpened": "2024-09-01T05:59:00.099Z",[m
+               "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 6,[m
+[31m-              "Title": "GameplayInitializer.cs",[m
+[31m-              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[31m-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[31m-              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[31m-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",[m
+[31m-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T05:57:40.186Z",[m
+[31m-              "EditorCaption": ""[m
+[31m-            },[m
+[31m-            {[m
+[31m-              "$type": "Document",[m
+[31m-              "DocumentIndex": 8,[m
+[32m+[m[32m              "DocumentIndex": 11,[m
+               "Title": "AIOpponentTest.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\EditModeTests\\Editor\\GameplaySceneTests\\AI\\AIOpponentTest.cs",[m
+               "RelativeDocumentMoniker": "Assets\\EditModeTests\\Editor\\GameplaySceneTests\\AI\\AIOpponentTest.cs",[m
+               "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\EditModeTests\\Editor\\GameplaySceneTests\\AI\\AIOpponentTest.cs",[m
+               "RelativeToolTip": "Assets\\EditModeTests\\Editor\\GameplaySceneTests\\AI\\AIOpponentTest.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABHAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T05:54:07.915Z"[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T05:54:07.915Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 9,[m
+[32m+[m[32m              "DocumentIndex": 12,[m
+               "Title": "AIOpponent.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\AI\\AIOpponent.cs",[m
+               "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\AI\\AIOpponent.cs",[m
+[1mdiff --git a/.vs/RockPaperScissorsMore/v17/DocumentLayout.json b/.vs/RockPaperScissorsMore/v17/DocumentLayout.json[m
+[1mindex 054f03b5..2680b7d1 100644[m
+[1m--- a/.vs/RockPaperScissorsMore/v17/DocumentLayout.json[m
+[1m+++ b/.vs/RockPaperScissorsMore/v17/DocumentLayout.json[m
+[36m@@ -3,36 +3,44 @@[m
+   "WorkspaceRootPath": "D:\\Unity Projects\\RockPaperScissorsMore\\",[m
+   "Documents": [[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|d:\\unity projects\\rockpaperscissorsmore\\assets\\scripts\\gameplay\\score\\currentscorekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\score\\currentscorekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|d:\\unity projects\\rockpaperscissorsmore\\assets\\scripts\\gameplay\\gameplayinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\gameplayinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|d:\\unity projects\\rockpaperscissorsmore\\assets\\scripts\\gameplay\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|d:\\unity projects\\rockpaperscissorsmore\\assets\\scripts\\startmenu\\faceoffchartdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\startmenu\\faceoffchartdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{60D7BB25-538F-998E-B22E-C75562BAAF68}|PlayModeTests.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\playmodetests\\timertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{60D7BB25-538F-998E-B22E-C75562BAAF68}|PlayModeTests.csproj|solutionrelative:assets\\playmodetests\\timertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\topscoredisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\topscoredisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\score\\currentscorekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\score\\currentscorekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\coordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\coordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+       "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+       "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\decisionmaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\decisionmaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\startmenu\\startmenudisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\startmenu\\startmenudisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\decisionmaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\decisionmaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\ai\\aiappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\ai\\aiappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{60D7BB25-538F-998E-B22E-C75562BAAF68}|PlayModeTests.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\playmodetests\\timertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{60D7BB25-538F-998E-B22E-C75562BAAF68}|PlayModeTests.csproj|solutionrelative:assets\\playmodetests\\timertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\gameplayinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\gameplayinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+     {[m
+       "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[36m@@ -45,14 +53,6 @@[m
+     {[m
+       "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\ai\\aiopponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+       "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\ai\\aiopponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\startmenu\\startmenudisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\startmenu\\startmenudisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|D:\\Unity Projects\\RockPaperScissorsMore\\assets\\scripts\\gameplay\\gameplaydisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{0AE20144-BB19-F1AC-E646-169F9C38D366}|RulesAssembly.csproj|solutionrelative:assets\\scripts\\gameplay\\gameplaydisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     }[m
+   ],[m
+   "DocumentGroupContainers": [[m
+[36m@@ -67,119 +67,136 @@[m
+             {[m
+               "$type": "Document",[m
+               "DocumentIndex": 0,[m
+[32m+[m[32m              "Title": "GameplayInitializer.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\GameplayInitializer.cs",[m
+[32m+[m[32m              "ViewState": "AgIAABwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",[m
+[32m+[m[32m              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T15:25:35.778Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+[32m+[m[32m            },[m
+[32m+[m[32m            {[m
+[32m+[m[32m              "$type": "Document",[m
+[32m+[m[32m              "DocumentIndex": 1,[m
+[32m+[m[32m              "Title": "FaceOffChartDisplay.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\StartMenu\\FaceOffChartDisplay.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\Scripts\\StartMenu\\FaceOffChartDisplay.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\StartMenu\\FaceOffChartDisplay.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\Scripts\\StartMenu\\FaceOffChartDisplay.cs",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",[m
+[32m+[m[32m              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T10:36:08.122Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+[32m+[m[32m            },[m
+[32m+[m[32m            {[m
+[32m+[m[32m              "$type": "Document",[m
+[32m+[m[32m              "DocumentIndex": 2,[m
+[32m+[m[32m              "Title": "TopScoreDisplay.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\TopScoreDisplay.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\TopScoreDisplay.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\TopScoreDisplay.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\TopScoreDisplay.cs",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",[m
+[32m+[m[32m              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T10:14:19.557Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+[32m+[m[32m            },[m
+[32m+[m[32m            {[m
+[32m+[m[32m              "$type": "Document",[m
+[32m+[m[32m              "DocumentIndex": 3,[m
+               "Title": "CurrentScoreKeeper.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Score\\CurrentScoreKeeper.cs",[m
+               "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Score\\CurrentScoreKeeper.cs",[m
+               "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Score\\CurrentScoreKeeper.cs",[m
+               "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Score\\CurrentScoreKeeper.cs",[m
+[31m-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+               "WhenOpened": "2024-09-01T09:43:24.307Z",[m
+               "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 1,[m
+[31m-              "Title": "Game.cs",[m
+[31m-              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Game.cs",[m
+[31m-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Game.cs",[m
+[31m-              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Game.cs",[m
+[31m-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Game.cs",[m
+[31m-              "ViewState": "AgIAABQAAAAAAAAAAAAQwDUAAAAbAAAAAAAAAA==",[m
+[32m+[m[32m              "DocumentIndex": 4,[m
+[32m+[m[32m              "Title": "Coordinator.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Coordinator.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Coordinator.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Coordinator.cs",[m
+[32m+[m[32m              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Coordinator.cs",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+               "WhenOpened": "2024-09-01T08:21:39.152Z",[m
+               "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 3,[m
+[32m+[m[32m              "DocumentIndex": 5,[m
+               "Title": "Timer.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Timer.cs",[m
+               "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Timer.cs",[m
+               "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Timer.cs",[m
+               "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Timer.cs",[m
+[31m-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADMAAAAdAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+               "WhenOpened": "2024-09-01T07:56:07.676Z",[m
+               "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 2,[m
+[31m-              "Title": "TimerTest.cs",[m
+[31m-              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\PlayModeTests\\TimerTest.cs",[m
+[31m-              "RelativeDocumentMoniker": "Assets\\PlayModeTests\\TimerTest.cs",[m
+[31m-              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\PlayModeTests\\TimerTest.cs",[m
+[31m-              "RelativeToolTip": "Assets\\PlayModeTests\\TimerTest.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",[m
+[31m-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T07:50:38.096Z",[m
+[31m-              "EditorCaption": ""[m
+[31m-            },[m
+[31m-            {[m
+[31m-              "$type": "Document",[m
+[31m-              "DocumentIndex": 12,[m
+[31m-              "Title": "GameplayDisplay.cs",[m
+[31m-              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\GameplayDisplay.cs",[m
+[31m-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\GameplayDisplay.cs",[m
+[31m-              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\GameplayDisplay.cs",[m
+[31m-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\GameplayDisplay.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",[m
+[31m-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T06:50:28.248Z"[m
+[31m-            },[m
+[31m-            {[m
+[31m-              "$type": "Document",[m
+[31m-              "DocumentIndex": 11,[m
+[32m+[m[32m              "DocumentIndex": 6,[m
+               "Title": "StartMenuDisplay.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\StartMenu\\StartMenuDisplay.cs",[m
+               "RelativeDocumentMoniker": "Assets\\Scripts\\StartMenu\\StartMenuDisplay.cs",[m
+               "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\StartMenu\\StartMenuDisplay.cs",[m
+               "RelativeToolTip": "Assets\\Scripts\\StartMenu\\StartMenuDisplay.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T06:49:46.155Z"[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T06:49:46.155Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 4,[m
+[32m+[m[32m              "DocumentIndex": 7,[m
+               "Title": "DecisionMaker.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\DecisionMaker.cs",[m
+               "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\DecisionMaker.cs",[m
+               "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\DecisionMaker.cs",[m
+               "RelativeToolTip": "Assets\\Scripts\\Gameplay\\DecisionMaker.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAfAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+               "WhenOpened": "2024-09-01T06:44:03.226Z",[m
+               "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 6,[m
+[31m-              "Title": "AIAppearance.cs",[m
+[31m-              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\AI\\AIAppearance.cs",[m
+[31m-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\AI\\AIAppearance.cs",[m
+[31m-              "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\AI\\AIAppearance.cs",[m
+[31m-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\AI\\AIAppearance.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAXAAAAAAAAAA==",[m
+[31m-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T06:29:51.389Z"[m
+[31m-            },[m
+[31m-            {[m
+[31m-              "$type": "Document",[m
+[31m-              "DocumentIndex": 8,[m
+[32m+[m[32m              "DocumentIndex": 10,[m
+               "Title": "Move.cs",[m
+               "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Move.cs",[m
+               "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Move.cs",[m
+               "ToolTip": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\Scripts\\Gameplay\\Move.cs",[m
+               "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Move.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAnAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2024-09-01T06:18:06.061Z"[m
+[32m+[m[32m              "WhenOpened": "2024-09-01T06:18:06.061Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 5,[m
+[32m+[m[32m              "DocumentIndex": 8,[m
+[32m+[m[32m              "Title": "TimerTest.cs",[m
+[32m+[m[32m              "DocumentMoniker": "D:\\Unity Projects\\RockPaperScissorsMore\\Assets\\PlayModeTests\\TimerTest.cs",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Assets\\PlayModeTests\\TimerTest.cs",[m
+[32m+[m[32m              "ToolTip": "D:\\Unity Projects\
