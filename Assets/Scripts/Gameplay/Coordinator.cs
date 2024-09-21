@@ -10,6 +10,8 @@ namespace Gameplay
         private DecisionMaker _decisionMaker;
 
         [SerializeField]
+        private TimerDisplay _timerDisplay;
+
         private Timer _timer;
 
         [SerializeField]
@@ -24,6 +26,13 @@ namespace Gameplay
         private bool _acceptInput;
 
         delegate void RemainingSequence();
+
+        public void Initialise()
+        {
+            _timer = new Timer(this);
+            _timerDisplay.InitialiseDisplay(_timer);
+            _timer.AddTimeUpListener(GameOver);
+        }
 
         public void StartGame()
         {
@@ -73,10 +82,10 @@ namespace Gameplay
             sequence.Invoke();
         }
 
-        public void TakeUserMove(Type userMove)
+        public void TakeUserMove(Choice userMove)
         {
             if (!_acceptInput) return;
-            _decisionMaker.makeDecision(userMove);
+            _decisionMaker.MakeDecision(userMove);
             _acceptInput = false;
         }
 

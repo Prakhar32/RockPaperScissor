@@ -1,54 +1,73 @@
-using System;
-using TMPro;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Events;
 
 namespace Gameplay
 {
-    public class Timer : MonoBehaviour
+    public class Timer
     {
-        [SerializeField]
-        private Image _clock;
+        public float TimeLeft { get; private set; }
 
-        [SerializeField]
-        TextMeshProUGUI _timeDisplay;
+        private Coroutine timer;
+        private UnityEvent timeLeftChanged;
+        private UnityEvent timeOverEvent;
 
-        private float _timeLeft;
-        private bool _timerStarted;
+        private MonoBehaviour _monoBehaviour;
 
-        [SerializeField]
-        private Coordinator _game;
+        public Timer(MonoBehaviour monoBehaviour)
+        {
+            _monoBehaviour = monoBehaviour;
+            timeLeftChanged = new UnityEvent();
+            timeOverEvent = new UnityEvent();
+        }
 
         public void StartTimer()
         {
-            _timeLeft = Constants.TimeLimit;
-            _timerStarted = true;
+            TimeLeft = Constants.TimeLimit;
+            timer = _monoBehaviour.StartCoroutine(TimerProcess());
         }
 
-        private void Update()
+        private IEnumerator TimerProcess()
         {
-            if (_timerStarted)
+            while (TimeLeft > 0)
             {
-                if (_timeLeft > 0)
-                {
-                    _timeDisplay.text = TimeSpan.FromSeconds(_timeLeft).ToString(@"mm\:ss");
-                    _clock.fillAmount = (float)_timeLeft / (float)Constants.TimeLimit;
-                    _timeLeft -= Time.deltaTime;
-                }
-                else
-                    TimeOver();
+                yield return null;
+                TimeLeft -= Time.deltaTime;
+                timeLeftChanged.Invoke();
             }
+
+            timeUp();
         }
 
-        public void StopTimer() 
+        private void timeUp()
         {
-            _timerStarted = false;
+            StopTimer();
+            timeOverEvent.Invoke();
         }
 
-        private void TimeOver()
+        public void StopTimer()
         {
-            _timerStarted = false;
-            _game.GameOver();
+            _monoBehaviour.StopCoroutine(timer);
+        }
+
+        public void AddTimerChangedListener(UnityAction subscriber)
+        {
+            timeLeftChanged.AddListener(subscriber);
+        }
+
+        public void RemoveTimerChangedListener(UnityAction subscriber)
+        {
+            timeLeftChanged.RemoveListener(subscriber);
+        }
+
+        public void AddTimeUpListener(UnityAction subscriber)
+        {
+            timeOverEvent.AddListener(subscriber);
+        }
+
+        public void RemoveTimeUpListener(UnityAction subscriber)
+        {
+            timeOverEvent.RemoveListener(subscriber);
         }
     }
 }

@@ -18,7 +18,9 @@ public class Constants
 
     public const string spriteAtlusBaseName = "AllSpritesWoNames";
 
-    public const int TimeLimit = 3;
+    public const float TimeLimit = 3;
+
+    public const float ClockUpdationTime = 1f;
 
     public const float WaitTime = 1.5f;
 
@@ -31,7 +33,7 @@ public class Constants
 
 public class CommonStructures
 {
-    public static Type[] Moves = new Type[] { typeof(Rock), typeof(Paper), typeof(Scissor), typeof(Lizard), typeof(Spock) };
+    public static Choice[] Moves = new Choice[] { new Rock(), new Paper(), new Scissor(), new Lizard(), new Spock() };
 
     public static Dictionary<Type, int> SpriteAtlusIndexMapper = new Dictionary<Type, int>
     {
