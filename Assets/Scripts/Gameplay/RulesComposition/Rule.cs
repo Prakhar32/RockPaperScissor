@@ -8,31 +8,31 @@ namespace Gameplay.RulesComposition
     public abstract class Rule
     {
         protected Rule containingRule;
-        public ResultContainer CheckResult(Type option1, Type option2)
+        public ResultContainer CheckResult(Choice choice1, Choice choice2)
         {
-            if (!checkForNullValue(option1, option2)) 
-                return setContainerContents(Result.INVALID, Constants.NullArguementError);
-            if (!checkForTypeMismatch(option1, option2))
-                return setContainerContents(Result.INVALID, Constants.InvalidTypeArguement);
-            if (areSame(option1, option2))
+            if (checkForNullValue(choice1, choice2))
+                throw new ArgumentNullException();
+            if (checkForTypeMismatch(choice1, choice2))
+                throw new ArgumentException(Constants.InvalidTypeArguement);
+            if (areSame(choice1, choice2))
                 return setContainerContents(Result.DRAW, Constants.DrawMessage);
 
-            return compareChoices(option1, option2);
+            return compareChoices(choice1, choice2);
         }
 
-        private bool checkForNullValue(Type option1, Type option2) { 
-            return option1 != null && option2 != null;
+        private bool checkForNullValue(Choice option1, Choice option2) { 
+            return option1 == null || option2 == null;
         }
 
-        private bool checkForTypeMismatch(Type option1, Type option2) { 
-            return option1.IsSubclassOf(typeof(Choice)) && option2.IsSubclassOf(typeof(Choice));
+        private bool checkForTypeMismatch(Choice option1, Choice option2) { 
+            return !option1.GetType().IsSubclassOf(typeof(Choice)) || !option2.GetType().IsSubclassOf(typeof(Choice));
         }
 
-        private bool areSame(Type option1, Type option2) { 
-            return option1.IsAssignableFrom(option2);
+        private bool areSame(Choice option1, Choice option2) { 
+            return option1.GetType().Equals(option2.GetType());
         }
 
-        protected abstract ResultContainer compareChoices(Type option1, Type option2);
+        protected abstract ResultContainer compareChoices(Choice choice1, Choice choice2);
 
         protected ResultContainer setContainerContents(Result result, string message)
         {
@@ -52,9 +52,9 @@ namespace Gameplay.RulesComposition
 
     public class NoRule : Rule
     {
-        protected override ResultContainer compareChoices(Type option1, Type option2)
+        protected override ResultContainer compareChoices(Choice choice1, Choice choice2)
         {
-            return setContainerContents(Result.INVALID, Constants.NoRuleError);
+            throw new FormatException(Constants.NoRuleError);
         }
     }
 }

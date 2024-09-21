@@ -7,12 +7,12 @@ namespace Gameplay
 {
     public class Move : MonoBehaviour
     {
-        private Type _choice;
+        private Choice _choice;
         private Image _icon;
         TextMeshProUGUI _text;
         private Coordinator _coordinator;
 
-        public void setDetails(Type choice, Sprite sprite)
+        public void setDetails(Choice choice, Sprite sprite)
         {
             _choice = choice;
 
@@ -20,7 +20,7 @@ namespace Gameplay
             _icon.sprite = sprite;
             
             _text = GetComponentInChildren<TextMeshProUGUI>();
-            _text.text = _choice.Name;
+            _text.text = _choice.GetType().Name;
         }
 
         public void SetDecisionMaker(Coordinator Game) 

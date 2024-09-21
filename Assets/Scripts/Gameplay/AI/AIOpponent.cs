@@ -4,9 +4,9 @@ namespace Gameplay.AI
 {
     public class AIOpponent 
     {
-        public Type computeMove()
+        public Choice computeMove()
         {
-            Type[] moves = CommonStructures.Moves;
+            Choice[] moves = CommonStructures.Moves;
             int index = UnityEngine.Random.Range(0, moves.Length);
             return moves[index];
         }

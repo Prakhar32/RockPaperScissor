@@ -18,6 +18,6 @@ public class AIOpponentTest
     public void ValidReturnType()
     {
         AIOpponent aiOpponent = new AIOpponent();
-        Assert.True(aiOpponent.computeMove().IsSubclassOf(typeof(Choice)));
+        Assert.True(aiOpponent.computeMove().GetType().IsSubclassOf(typeof(Choice)));
     }
 }

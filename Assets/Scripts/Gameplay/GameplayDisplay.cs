@@ -19,14 +19,24 @@ namespace Gameplay
         public void StartGame()
         {
             _gameplayInitializer.Initialise();
-            _mainScreen.SetActive(false);
-            _gameplayScreen.SetActive(true);
+            switchToGameScreen();
+            _gameplayInitializer.StartGame();
         }
 
-        public void EndGame()
+        private void switchToGameScreen()
         {
-            _gameplayScreen.SetActive(false);
-            _mainScreen.SetActive(true);
+            switchScreen(true);
+        }
+
+        private void switchToMainMenuScreen()
+        {
+            switchScreen(false);
+        }
+
+        private void switchScreen(bool state)
+        {
+            _mainScreen.SetActive(!state);
+            _gameplayScreen.SetActive(state);
         }
     }
 }

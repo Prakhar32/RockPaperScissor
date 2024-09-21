@@ -14,7 +14,7 @@ public class RulebookFactoryTest
     {
         RulebookFactory rulebookFactory = new RulebookFactory();
         Rule rulebook = rulebookFactory.CreateRulebook();
-        Assert.AreEqual(Result.LOSE, rulebook.CheckResult(typeof(Rock), typeof(Paper)).Result);
-        Assert.AreEqual(Result.WIN, rulebook.CheckResult(typeof(Paper), typeof(Spock)).Result);
+        Assert.AreEqual(Result.LOSE, rulebook.CheckResult(new Rock(), new Paper()).Result);
+        Assert.AreEqual(Result.WIN, rulebook.CheckResult(new Paper(), new Spock()).Result);
     }
 }

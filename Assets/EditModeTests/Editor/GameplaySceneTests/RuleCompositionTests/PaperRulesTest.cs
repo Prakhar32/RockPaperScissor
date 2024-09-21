@@ -7,7 +7,7 @@ public class PaperRulesTest
     public void PaperLizardTest()
     {
         Rule faceoff = new PaperLizardRule(new NoRule());
-        ResultContainer container = faceoff.CheckResult(typeof(Paper), typeof(Lizard));
+        ResultContainer container = faceoff.CheckResult(new Paper(), new Lizard());
         Assert.AreEqual(Result.LOSE, container.Result);
         Assert.AreEqual(CommonStructures.FlavourText[typeof(PaperLizardRule)], container.Message);
     }
@@ -16,7 +16,7 @@ public class PaperRulesTest
     public void LizardPaperTest()
     {
         Rule faceoff = new PaperLizardRule(new NoRule());
-        ResultContainer container = faceoff.CheckResult(typeof(Lizard), typeof(Paper));
+        ResultContainer container = faceoff.CheckResult(new Lizard(), new Paper());
         Assert.AreEqual(Result.WIN, container.Result);
         Assert.AreEqual(CommonStructures.FlavourText[typeof(PaperLizardRule)], container.Message);
     }
@@ -25,7 +25,7 @@ public class PaperRulesTest
     public void PaperSpockTest()
     {
         Rule faceoff = new PaperSpockRule(new NoRule());
-        ResultContainer container = faceoff.CheckResult(typeof(Paper), typeof(Spock));
+        ResultContainer container = faceoff.CheckResult(new Paper(), new Spock());
         Assert.AreEqual(Result.WIN, container.Result);
         Assert.AreEqual(CommonStructures.FlavourText[typeof(PaperSpockRule)], container.Message);
     }
@@ -34,7 +34,7 @@ public class PaperRulesTest
     public void SpockPaperTest()
     {
         Rule faceoff = new PaperSpockRule(new NoRule());
-        ResultContainer container = faceoff.CheckResult(typeof(Spock), typeof(Paper));
+        ResultContainer container = faceoff.CheckResult(new Spock(), new Paper());
         Assert.AreEqual(Result.LOSE, container.Result);
         Assert.AreEqual(CommonStructures.FlavourText[typeof(PaperSpockRule)], container.Message);
     }
@@ -43,7 +43,7 @@ public class PaperRulesTest
     public void PaperPaperTest()
     {
         Rule faceoff = new PaperSpockRule(new NoRule());
-        ResultContainer container = faceoff.CheckResult(typeof(Paper), typeof(Paper));
+        ResultContainer container = faceoff.CheckResult(new Paper(), new Paper());
         Assert.AreEqual(Result.DRAW, container.Result);
         Assert.AreEqual(Constants.DrawMessage, container.Message);
     }

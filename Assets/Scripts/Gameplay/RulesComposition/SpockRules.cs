@@ -8,14 +8,14 @@ namespace Gameplay.RulesComposition
         {
         }
 
-        protected override ResultContainer compareChoices(Type option1, Type option2)
+        protected override ResultContainer compareChoices(Choice choice1, Choice choice2)
         {
-            if (option1.IsAssignableFrom(typeof(Spock)) && option2.IsAssignableFrom(typeof(Lizard)))
+            if (choice1.GetType().Equals(typeof(Spock)) && choice2.GetType().Equals(typeof(Lizard)))
                 return setContainerContents(Result.LOSE, CommonStructures.FlavourText[GetType()]);
-            else if (option1.IsAssignableFrom(typeof(Lizard)) && option2.IsAssignableFrom(typeof(Spock)))
+            else if (choice1.GetType().Equals(typeof(Lizard)) && choice2.GetType().Equals(typeof(Spock)))
                 return setContainerContents(Result.WIN, CommonStructures.FlavourText[GetType()]);
 
-            return containingRule.CheckResult(option1, option2);
+            return containingRule.CheckResult(choice1, choice2);
         }
     }
 }

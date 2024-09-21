@@ -27,22 +27,31 @@ namespace Gameplay
             opponent = new AIOpponent();
         }
 
-        public void makeDecision(Type userSelectedMove)
+        public void MakeDecision(Choice userChoice)
         {
-            Type aiMove = opponent.computeMove();
-            appearance.ChangeAppearance(aiMove, _coordinator);
+            Choice aiChoice = opponent.computeMove();
+            appearance.ChangeAppearance(aiChoice, _coordinator);
 
-            ResultContainer resultContainer = rulebook.CheckResult(userSelectedMove, aiMove);
+            ResultContainer resultContainer = rulebook.CheckResult(userChoice, aiChoice);
+            changeFlavourText(resultContainer.Message);
+            evaluateResult(resultContainer.Result);
+        }
+
+        private void changeFlavourText(string message)
+        {
             _flavourText.gameObject.SetActive(true);
-            _flavourText.text = resultContainer.Message;
+            _flavourText.text = message;
+        }
 
-            if (resultContainer.Result == Result.LOSE)
+        private void evaluateResult(Result result) 
+        {
+            if (result == Result.LOSE)
                 _coordinator.GameOver();
 
-            if(resultContainer.Result == Result.WIN)
+            if (result == Result.WIN)
                 _coordinator.WonRound();
 
-            if(resultContainer.Result == Result.DRAW)
+            if (result == Result.DRAW)
                 _coordinator.DrewRound();
         }
 

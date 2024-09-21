@@ -1,6 +1,6 @@
 public enum Result
 {
-    WIN, LOSE, DRAW, INVALID
+    WIN, LOSE, DRAW
 }
 
 public class ResultContainer

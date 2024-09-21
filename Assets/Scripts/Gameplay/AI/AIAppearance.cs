@@ -14,9 +14,9 @@ namespace Gameplay.AI {
         [SerializeField]
         private SpriteAtlas _optionsSpriteAtlus;
 
-        public void ChangeAppearance(Type move, Coordinator coordinator)
+        public void ChangeAppearance(Choice choice, Coordinator coordinator)
         {
-            _move.setDetails(move, _optionsSpriteAtlus.GetSprite(Constants.spriteAtlusBaseName + "_" + CommonStructures.SpriteAtlusIndexMapper[move]));
+            _move.setDetails(choice, _optionsSpriteAtlus.GetSprite(Constants.spriteAtlusBaseName + "_" + CommonStructures.SpriteAtlusIndexMapper[choice.GetType()]));
             _move.SetDecisionMaker(coordinator);
             ChangeState(true);
         }
