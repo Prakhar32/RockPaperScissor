@@ -10,9 +10,9 @@ namespace Gameplay
         private DecisionMaker _decisionMaker;
 
         [SerializeField]
-        private TimerDisplay _timerDisplay;
+        private StopwatchDisplay _timerDisplay;
 
-        private Timer _timer;
+        private Stopwatch _timer;
 
         [SerializeField]
         private GameObject _gameScreen;
@@ -29,7 +29,7 @@ namespace Gameplay
 
         public void Initialise()
         {
-            _timer = new Timer(this);
+            _timer = new MonobehaviourStopwatch(this);
             _timerDisplay.InitialiseDisplay(_timer);
             _timer.AddTimeUpListener(GameOver);
         }

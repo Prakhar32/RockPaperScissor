@@ -4,9 +4,9 @@ using UnityEngine.Events;
 
 namespace Gameplay
 {
-    public class Timer
+    public class MonobehaviourStopwatch : Stopwatch
     {
-        public float TimeLeft { get; private set; }
+        private float timeLeft;
 
         private Coroutine timer;
         private UnityEvent timeLeftChanged;
@@ -14,7 +14,7 @@ namespace Gameplay
 
         private MonoBehaviour _monoBehaviour;
 
-        public Timer(MonoBehaviour monoBehaviour)
+        public MonobehaviourStopwatch(MonoBehaviour monoBehaviour)
         {
             _monoBehaviour = monoBehaviour;
             timeLeftChanged = new UnityEvent();
@@ -23,16 +23,16 @@ namespace Gameplay
 
         public void StartTimer()
         {
-            TimeLeft = Constants.TimeLimit;
+            timeLeft = Constants.TimeLimit;
             timer = _monoBehaviour.StartCoroutine(TimerProcess());
         }
 
         private IEnumerator TimerProcess()
         {
-            while (TimeLeft > 0)
+            while (timeLeft > 0)
             {
                 yield return null;
-                TimeLeft -= Time.deltaTime;
+                timeLeft -= Time.deltaTime;
                 timeLeftChanged.Invoke();
             }
 
@@ -43,6 +43,11 @@ namespace Gameplay
         {
             StopTimer();
             timeOverEvent.Invoke();
+        }
+
+        public float getTime()
+        {
+            return timeLeft;
         }
 
         public void StopTimer()

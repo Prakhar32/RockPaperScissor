@@ -4,19 +4,19 @@ using UnityEngine.TestTools;
 using Gameplay;
 using NUnit.Framework;
 
-public class TimerTest
+public class StopwatchTest
 {
-    private Timer initialiseTimer()
+    private Stopwatch initialiseTimer()
     {
         MonoBehaviour mono = new MonoBehaviourTest<MonoBehaviourTestStruct>().component;
-        Timer timer = new Timer(mono);
+        Stopwatch timer = new MonobehaviourStopwatch(mono);
         return timer;
     }
 
     [UnityTest]
     public IEnumerator TimeUpTest()
     {
-        Timer timer = initialiseTimer();
+        Stopwatch timer = initialiseTimer();
         bool timeUp = false;
 
         timer.AddTimeUpListener(() => timeUp = true);
@@ -29,7 +29,7 @@ public class TimerTest
     [UnityTest]
     public IEnumerator TimerStoppedTest()
     {
-        Timer timer = initialiseTimer();
+        Stopwatch timer = initialiseTimer();
         bool timeUp = false;
         
         timer.AddTimeUpListener(() => timeUp = true);
@@ -44,7 +44,7 @@ public class TimerTest
     [UnityTest]
     public IEnumerator TimerChangedTest() 
     {
-        Timer timer = initialiseTimer();
+        Stopwatch timer = initialiseTimer();
         float timeElasped = 0;
 
         timer.AddTimerChangedListener(() => timeElasped += Time.deltaTime);

@@ -8,32 +8,23 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.UI;
 
-public class TimerDisplayTest
+public class StopwatchDisplayTest
 {
-    private Timer initialiseTimer()
+    private Stopwatch initialiseTimer()
     {
         MonoBehaviour mono = new MonoBehaviourTest<MonoBehaviourTestStruct>().component;
-        Timer timer = new Timer(mono);
+        Stopwatch timer = new MonobehaviourStopwatch(mono);
         return timer;
     }
-
-    //[UnityTest]
-    //private IEnumerator TimerLoadingTest()
-    //{
-    //    GameObject g = ScriptableObject.CreateInstance<TimerScriptableObject>().Timer;
-    //    yield return null;
-    //    TimerDisplay display = g.GetComponent<TimerDisplay>();
-    //    Assert.IsNotNull(display);
-    //}
 
     [UnityTest]
     public IEnumerator GameobjectMissingImageField()
     {
         LogAssert.ignoreFailingMessages = true;
         GameObject parent = new GameObject();
-        parent.AddComponent<TimerDisplay>();
+        parent.AddComponent<StopwatchDisplay>();
         yield return null;
-        Assert.IsNull(parent.GetComponent<TimerDisplay>());
+        Assert.IsNull(parent.GetComponent<StopwatchDisplay>());
     }
 
     [UnityTest]
@@ -41,9 +32,9 @@ public class TimerDisplayTest
     {
         LogAssert.ignoreFailingMessages = true;
         GameObject parent = createGameoBjectWithImage();
-        parent.AddComponent<TimerDisplay>();
+        parent.AddComponent<StopwatchDisplay>();
         yield return null;
-        Assert.IsNull (parent.GetComponent<TimerDisplay>());
+        Assert.IsNull (parent.GetComponent<StopwatchDisplay>());
     }
 
     [UnityTest]
@@ -52,7 +43,7 @@ public class TimerDisplayTest
         LogAssert.ignoreFailingMessages = true;
         GameObject timerGameObject = creategameobjectWithoutSprite();
         yield return null;
-        Assert.IsNull(timerGameObject.GetComponent<TimerDisplay>());
+        Assert.IsNull(timerGameObject.GetComponent<StopwatchDisplay>());
     }
 
     [UnityTest]
@@ -60,7 +51,7 @@ public class TimerDisplayTest
     {
         GameObject timerGameObject = composeTimerGameObject();
         yield return null;
-        Assert.IsNotNull(timerGameObject.GetComponent<TimerDisplay>());
+        Assert.IsNotNull(timerGameObject.GetComponent<StopwatchDisplay>());
     }
 
     [UnityTest]
@@ -68,9 +59,9 @@ public class TimerDisplayTest
     {
         GameObject timerGameObject = composeTimerGameObject();
         yield return null;
-        Timer timer = initialiseTimer();
+        Stopwatch timer = initialiseTimer();
 
-        TimerDisplay display = timerGameObject.GetComponent<TimerDisplay>();
+        StopwatchDisplay display = timerGameObject.GetComponent<StopwatchDisplay>();
         display.InitialiseDisplay(timer);
         yield return null;
 
@@ -100,7 +91,7 @@ public class TimerDisplayTest
     {
         GameObject parent = createGameoBjectWithImage();
         parent = addTextFieldInChild(parent);
-        parent.AddComponent<TimerDisplay>();
+        parent.AddComponent<StopwatchDisplay>();
         return parent;
     }
 
@@ -132,7 +123,7 @@ public class TimerDisplayTest
     {
         GameObject parent = createGameobjectWithFilledImage();
         parent = addTextFieldInChild(parent);
-        parent.AddComponent<TimerDisplay>();
+        parent.AddComponent<StopwatchDisplay>();
         return parent;
     }
 }

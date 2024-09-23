@@ -8,11 +8,11 @@ using UnityEngine.UI;
 namespace Gameplay
 {
     [RequireComponent(typeof(Image))]
-    public class TimerDisplay : MonoBehaviour
+    public class StopwatchDisplay : MonoBehaviour
     {
         private Image _clock;
         private TextMeshProUGUI _timeDisplay;
-        private Timer _timer;
+        private Stopwatch _timer;
 
         [SerializeField]
         private float _timerTime;
@@ -32,7 +32,7 @@ namespace Gameplay
             }
         }
 
-        public void InitialiseDisplay(Timer timer)
+        public void InitialiseDisplay(Stopwatch timer)
         {
             _clock = GetComponent<Image>();
             _timeDisplay = GetComponentInChildren<TextMeshProUGUI>();
@@ -42,19 +42,19 @@ namespace Gameplay
 
         private void timerInUse()
         {
-            _timerTime = _timer.TimeLeft;
+            _timerTime = _timer.getTime();
             updateTimeText();
             updateClockFilledAmound();
         }
 
         private void updateTimeText() 
         {
-            _timeDisplay.text = TimeSpan.FromSeconds(_timer.TimeLeft).ToString(@"m\:ss");
+            _timeDisplay.text = TimeSpan.FromSeconds(_timer.getTime() + 1).Seconds.ToString();
         }
 
         private void updateClockFilledAmound() 
         {
-            _clock.fillAmount = (float)_timer.TimeLeft / (float)Constants.TimeLimit;
+            _clock.fillAmount = (float)_timer.getTime() / (float)Constants.TimeLimit;
         }
     }
 }
