@@ -1,22 +1,15 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using Gameplay;
 using NUnit.Framework;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.TestTools;
 using UnityEngine.UI;
 
 public class StopwatchDisplayTest
 {
-    private Stopwatch initialiseTimer()
-    {
-        MonoBehaviour mono = new MonoBehaviourTest<MonoBehaviourTestStruct>().component;
-        Stopwatch timer = new MonobehaviourStopwatch(mono);
-        return timer;
-    }
-
     [UnityTest]
     public IEnumerator GameobjectMissingImageField()
     {
@@ -42,34 +35,83 @@ public class StopwatchDisplayTest
     {
         LogAssert.ignoreFailingMessages = true;
         GameObject timerGameObject = creategameobjectWithoutSprite();
+        timerGameObject.AddComponent<StopwatchDisplay>();
         yield return null;
         Assert.IsNull(timerGameObject.GetComponent<StopwatchDisplay>());
     }
 
     [UnityTest]
-    public IEnumerator GameobjectSuccessfullyComposed()
+    public IEnumerator MissingTimer()
     {
+        LogAssert.ignoreFailingMessages = true;
         GameObject timerGameObject = composeTimerGameObject();
+        timerGameObject.AddComponent<StopwatchDisplay>();
         yield return null;
-        Assert.IsNotNull(timerGameObject.GetComponent<StopwatchDisplay>());
+        Assert.IsTrue(timerGameObject.GetComponent<StopwatchDisplay>() == null);
     }
 
     [UnityTest]
-    public IEnumerator TimerWorking()
+    public IEnumerator DisplayComposedSuccessfully()
     {
         GameObject timerGameObject = composeTimerGameObject();
+        StopwatchDisplay display = timerGameObject.AddComponent<StopwatchDisplay>();
+        display.InitialiseDisplay(getStopwatchStub());
         yield return null;
-        Stopwatch timer = initialiseTimer();
+        Assert.IsFalse(timerGameObject.GetComponent<StopwatchDisplay>() == null);
+    }
 
+    [UnityTest]
+    public IEnumerator DisplayWorkingWithStub()
+    {
+        GameObject timerGameObject = composeTimerGameObject();
+        timerGameObject.AddComponent<StopwatchDisplay>();
+        Stopwatch timer = getStopwatchStub();
         StopwatchDisplay display = timerGameObject.GetComponent<StopwatchDisplay>();
         display.InitialiseDisplay(timer);
         yield return null;
 
-        bool timeUp = false;
-        timer.AddTimeUpListener(() => timeUp = true);
         timer.StartTimer();
-        yield return new WaitForSeconds(Constants.TimeLimit);
-        Assert.IsTrue(timeUp);
+        yield return null;
+        string displayedText = timerGameObject.GetComponentInChildren<TextMeshProUGUI>().text;
+        string expectedText = TimeSpan.FromSeconds(timer.GetTime() + 1).Seconds.ToString();
+        Assert.AreEqual(expectedText, displayedText);
+    }
+
+    [UnityTest]
+    public IEnumerator DisplayWorkingWithTimer()
+    {
+        GameObject timerGameObject = composeTimerGameObject();
+        timerGameObject.AddComponent<StopwatchDisplay>();
+        Stopwatch timer = initialiseTimer();
+        StopwatchDisplay display = timerGameObject.GetComponent<StopwatchDisplay>();
+        display.InitialiseDisplay(timer);
+        yield return null;
+
+        float timeLeft = Constants.TimeLimit;
+        timer.StartTimer();
+        yield return null;
+        
+        while(timeLeft > 0)
+        {
+            timeLeft -= Time.deltaTime;
+            string displayedText = timerGameObject.GetComponentInChildren<TextMeshProUGUI>().text;
+            string expectedText = TimeSpan.FromSeconds(timer.GetTime() + 1).Seconds.ToString();
+            Assert.AreEqual(expectedText, displayedText);
+            yield return null;
+        }
+    }
+
+    private Stopwatch initialiseTimer()
+    {
+        MonoBehaviour mono = new MonoBehaviourTest<MonoBehaviourTestStruct>().component;
+        Stopwatch timer = new MonobehaviourStopwatch(mono);
+        return timer;
+    }
+
+    private Stopwatch getStopwatchStub()
+    {
+        StopwatchStub stub = new StopwatchStub();
+        return stub;
     }
 
     private GameObject createGameoBjectWithImage()
@@ -91,7 +133,6 @@ public class StopwatchDisplayTest
     {
         GameObject parent = createGameoBjectWithImage();
         parent = addTextFieldInChild(parent);
-        parent.AddComponent<StopwatchDisplay>();
         return parent;
     }
 
@@ -123,7 +164,51 @@ public class StopwatchDisplayTest
     {
         GameObject parent = createGameobjectWithFilledImage();
         parent = addTextFieldInChild(parent);
-        parent.AddComponent<StopwatchDisplay>();
         return parent;
+    }
+
+    class StopwatchStub : Stopwatch
+    {
+        private UnityEvent changedEvent;
+
+        public StopwatchStub()
+        {
+            changedEvent = new UnityEvent();
+        }
+
+        public void AddTimerChangedListener(UnityAction subscriber)
+        {
+            changedEvent.AddListener(subscriber);
+        }
+
+        public void AddTimeUpListener(UnityAction subscriber)
+        {
+            
+        }
+
+        public float GetTime()
+        {
+            return 3;
+        }
+
+        public void RemoveTimerChangedListener(UnityAction subscriber)
+        {
+            changedEvent.RemoveListener(subscriber);
+        }
+
+        public void RemoveTimeUpListener(UnityAction subscriber)
+        {
+            
+        }
+
+        public void StartTimer()
+        {
+            changedEvent.Invoke();
+        }
+
+        public void StopTimer()
+        {
+            
+        }
     }
 }

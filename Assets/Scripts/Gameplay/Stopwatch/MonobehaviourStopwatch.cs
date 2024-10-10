@@ -45,7 +45,7 @@ namespace Gameplay
             timeOverEvent.Invoke();
         }
 
-        public float getTime()
+        public float GetTime()
         {
             return timeLeft;
         }

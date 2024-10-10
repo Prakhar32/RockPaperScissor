@@ -8,10 +8,9 @@ namespace StartMenu
         [SerializeField]
         private TextMeshProUGUI _topScoreText;
 
-        // Start is called before the first frame update
         private void OnEnable()
         {
-            _topScoreText.text = Constants.TopScoreText + PlayerPrefs.GetInt(Constants.PlayerPrefsScoreText);
+            _topScoreText.text = Constants.HighScoreText + PlayerPrefs.GetInt(Constants.PlayerPrefsHighScoreKey);
         }
     }
 }

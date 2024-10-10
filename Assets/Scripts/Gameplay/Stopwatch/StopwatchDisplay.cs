@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 namespace Gameplay
 {
-    [RequireComponent(typeof(Image))]
     public class StopwatchDisplay : MonoBehaviour
     {
         private Image _clock;
@@ -17,18 +16,30 @@ namespace Gameplay
         [SerializeField]
         private float _timerTime;
 
-        private void OnValidate()
+        private void Start()
         {
+            if (GetComponent<Image>() == null)
+            {
+                Destroy(this);
+                throw new Exception("Image component missing");
+            }
+
+            if (GetComponent<Image>().sprite == null)
+            {
+                Destroy(this);
+                throw new UnityException("No image set");
+            }
+
             if (GetComponentInChildren<TextMeshProUGUI>() == null)
             {
                 Destroy(this);
                 throw new UnityException("TextMeshPro object not available");
             }
 
-            if(GetComponent<Image>().sprite == null)
+            if(_timer == null)
             {
                 Destroy(this);
-                throw new UnityException("No image set");
+                throw new MissingFieldException("Timer object not available");
             }
         }
 
@@ -42,19 +53,19 @@ namespace Gameplay
 
         private void timerInUse()
         {
-            _timerTime = _timer.getTime();
+            _timerTime = _timer.GetTime();
             updateTimeText();
             updateClockFilledAmound();
         }
 
         private void updateTimeText() 
         {
-            _timeDisplay.text = TimeSpan.FromSeconds(_timer.getTime() + 1).Seconds.ToString();
+            _timeDisplay.text = TimeSpan.FromSeconds(_timer.GetTime() + 1).Seconds.ToString();
         }
 
         private void updateClockFilledAmound() 
         {
-            _clock.fillAmount = (float)_timer.getTime() / (float)Constants.TimeLimit;
+            _clock.fillAmount = (float)_timer.GetTime() / (float)Constants.TimeLimit;
         }
     }
 }

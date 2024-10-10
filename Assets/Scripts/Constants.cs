@@ -26,9 +26,9 @@ public class Constants
 
     public const string ScoreText = "Score : ";
 
-    public const string TopScoreText = "Top Score : ";
+    public const string HighScoreText = "High Score : ";
 
-    public const string PlayerPrefsScoreText = "Top Score"; 
+    public const string PlayerPrefsHighScoreKey = "High Score"; 
 }
 
 public class CommonStructures

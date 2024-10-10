@@ -6,7 +6,7 @@ namespace Gameplay
     {
         public void StartTimer();
         public void StopTimer();
-        public float getTime();
+        public float GetTime();
         public void AddTimerChangedListener(UnityAction subscriber);
         public void RemoveTimerChangedListener(UnityAction subscriber);
         public void AddTimeUpListener(UnityAction subscriber);
